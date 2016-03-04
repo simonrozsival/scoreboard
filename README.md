@@ -3,7 +3,11 @@
 
 This project was created for my friend who needed a simple scoreboard app for an event, where several teams competed against each other in various competitions and the score needed to be stored and computed along the way. A chart of all the teams had to be displayed on a projector alongside with their logo.
 
-The app needed to run offline and persist the state (the whole evening cannot fail if the browser window is closed or computer shuts down for some reason). So I decided to use the [redux-storage](https://github.com/michaelcontento/redux-storage) package alongside with hashHistory from the [react-router](https://github.com/reactjs/react-router) ([react-router-redux](https://github.com/reactjs/react-router-redux)). It works great!
+The app needed to run offline on an arbitrary computer (possibly with no dependecies) and persist the state (the whole evening cannot fail if the browser window is closed or computer shuts down for some reason). The app is a web SPA using the great React library from Facebook alongside with the even greater Redux library by Dan Abramov. So I decided to use the redux-storage package alongside with hashHistory from the react-router (react-router-redux). It works great!
+
+## Demo
+
+See http://www.odraz.cz/betgames - the state is not shared with anyone, it is stored locally in your browser's `localStorage`.
 
 ## Used technologies and packages
 
